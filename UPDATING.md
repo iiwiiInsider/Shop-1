@@ -37,19 +37,19 @@ git push origin main
 ## Common Updates
 
 ### Update Homepage Content
-Edit `/home/runner/work/Shop-1/Shop-1/pages/index.js`
+Edit `pages/index.js`
 
 ### Update Market Page
-Edit `/home/runner/work/Shop-1/Shop-1/pages/market.js`
+Edit `pages/market.js`
 
 ### Add New Properties
-Edit `/home/runner/work/Shop-1/Shop-1/data/properties.js`
+Edit `data/properties.js`
 
 ### Change Styling
-Edit files in `/home/runner/work/Shop-1/Shop-1/styles/` directory
+Edit files in `styles/` directory
 
 ### Update Navigation
-Edit `/home/runner/work/Shop-1/Shop-1/components/Navbar.js`
+Edit `components/Navbar.js`
 
 ## Viewing Deployment Status
 
