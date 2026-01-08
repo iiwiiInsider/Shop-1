@@ -43,4 +43,33 @@ Next steps I can take for you
 - Deploy to Vercel and configure env vars/redirect URIs
 - Further polish UI to match the mockups pixel-for-pixel
 
+## Deployment to Production with HTTPS
+
+This application is ready to deploy to production with HTTPS. For detailed deployment instructions, including:
+- Deploying to Vercel (recommended) with automatic HTTPS
+- Setting up continuous deployment from GitHub
+- Configuring environment variables for production
+- Setting up custom domains
+- Alternative deployment options (Netlify, self-hosted)
+
+**See [DEPLOYMENT.md](DEPLOYMENT.md) for the complete deployment guide.**
+
+Quick deployment with Vercel:
+1. Push this code to GitHub
+2. Sign up at [vercel.com](https://vercel.com) with your GitHub account
+3. Import the repository
+4. Add environment variables (see DEPLOYMENT.md)
+5. Deploy - your app will be live with HTTPS in minutes!
+
+### Updating Your Live Site
+
+Once deployed, you can easily update your website:
+- Make changes to your code
+- Commit and push to GitHub
+- Vercel automatically rebuilds and deploys your changes
+
+**See [UPDATING.md](UPDATING.md) for a quick guide on making regular updates.**
+
+---
+
 If you'd like, I can now test the flows locally for you and document any remaining setup steps for Google and Apple credentials.
