@@ -126,7 +126,7 @@ export default function Login({ providers }){
               <div style={{display:'flex',gap:10,flexWrap:'wrap'}}>
                 <button className="btn btn-outline" disabled={loading} onClick={async ()=>{
                   setEmail('admin@local.test')
-                  setPassword('Admin123!')
+                  setPassword(SET PASSWORD)
                   await doCredentialsLogin({ email: 'admin@local.test', password: 'Admin123!', source: 'group-admin' })
                 }}>Login as Admin</button>
                 <button className="btn btn-outline" disabled={loading} onClick={async ()=>{
