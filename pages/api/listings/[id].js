@@ -18,8 +18,14 @@ async function writeListings(listings){
   await fs.writeFile(listingsPath, JSON.stringify(listings, null, 2))
 }
 
+import { getServerSession } from 'next-auth/next'
+import { authOptions } from '../auth/[...nextauth]'
+
 export default async function handler(req, res){
   if(req.method !== 'DELETE') return res.status(405).end()
+
+  const session = await getServerSession(req, res, authOptions)
+  if(!session?.user?.email) return res.status(401).json({ error: 'Unauthorized' })
 
   const idRaw = req.query.id
   const id = Number(idRaw)

@@ -20,7 +20,8 @@ export const authOptions = {
         const usersPath = path.join(process.cwd(), 'data', 'users.json')
         const raw = await fs.readFile(usersPath, 'utf8').catch(()=> '[]')
         const users = JSON.parse(raw || '[]')
-        const email = String(credentials?.email || '').trim().toLowerCase()
+        let email = String(credentials?.email || '').trim()
+        email = email.normalize('NFC').toLowerCase()
         const user = users.find(u => u.email === email)
         if(!user) return null
         const valid = await bcrypt.compare(credentials.password || '', user.passwordHash)
